@@ -1,0 +1,29 @@
+<html>
+
+<body>
+<h1>YouTube results (1080p LTE, 1080p EVDO, 720p LTE, 720p EVDO)</h1><p>
+
+<ol>
+
+<li>For each raster shown to the user, take the SSIM (relative to the "original" raster). Report the mean and stddev of these SSIMs.
+
+<li>For each run of the video, take the minimum SSIM among the rasters shown to the user. (One "minimum SSIM" per run.) Report the mean and stddev of these minima.
+
+<li>For the stalls, separate out the stalls that occur immediately after a seek event -- call these "resumes" -- and all the other stalls that occur while the video is supposed to be playing -- call these "inter-frame delays."
+
+<ol>
+
+<li> Among the "resumes," aggregate all the delays together and plot the CDF.
+
+<li>Plot the CDF of all of the "inter-frame delays." It's okay if most of them are exactly 1/24 second -- hopefully that will be true. But the part of the graph that is &gt; 1/24 second will be the stally part.
+
+<li>For each run, take the total duration of all of the "inter-frame delays." (Call this "total playback time.") Then take the total duration of the inter-frame delays that are greater than 1/10 second. Call this "rebuffering time." Report the ratio of the "rebuffering time" to the "total playback time." Call this the "rebuffering ratio." (I.e. how much of the time was the user staring at a stalled screen, not counting the resumes after a seek.)
+
+</ol>
+
+</ol>
+
+
+</body>
+
+</html>

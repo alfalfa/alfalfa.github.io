@@ -14,15 +14,23 @@
 
 <ol>
 
-<li> Among the "resumes," aggregate all the delays together and plot the CDF.
+<li> Among the "resumes," aggregate all the delays together and plot the CDF.<p>
 <img src="Verizon%20EVDO%20driving%201080p-resume-delays-cdf.svg">
 <img src="Verizon%20LTE%20short%201080p-resume-delays-cdf.svg">
 <img src="Verizon%20EVDO%20driving%20720p-resume-delays-cdf.svg">
 <img src="Verizon%20LTE%20short%20720p-resume-delays-cdf.svg">
 
-<li>Plot the CDF of all of the "inter-frame delays." It's okay if most of them are exactly 1/24 second -- hopefully that will be true. But the part of the graph that is &gt; 1/24 second will be the stally part.
+<li>Plot the CDF of all of the "inter-frame delays." It's okay if most of them are exactly 1/24 second -- hopefully that will be true. But the part of the graph that is &gt; 1/24 second will be the stally part.<p>
+<img src="Verizon%20EVDO%20driving%201080p-inter-frame-delays-ccdf.svg">
+<img src="Verizon%20LTE%20short%201080p-inter-frame-delays-ccdf.svg">
+<img src="Verizon%20EVDO%20driving%20720p-inter-frame-delays-ccdf.svg">
+<img src="Verizon%20LTE%20short%20720p-inter-frame-delays-ccdf.svg">
 
-<li>For each run, take the total duration of all of the "inter-frame delays." (Call this "total playback time.") Then take the total duration of the inter-frame delays that are greater than 1/10 second. Call this "rebuffering time." Report the ratio of the "rebuffering time" to the "total playback time." Call this the "rebuffering ratio." (I.e. how much of the time was the user staring at a stalled screen, not counting the resumes after a seek.)
+<li>For each run, take the total duration of all of the "inter-frame delays." (Call this "total playback time.") Then take the total duration of the inter-frame delays that are greater than 1/10 second. Call this "rebuffering time." Report the ratio of the "rebuffering time" to the "total playback time." Call this the "rebuffering ratio." (I.e. how much of the time was the user staring at a stalled screen, not counting the resumes after a seek.)<p>
+<img src="Verizon%20EVDO%20driving%201080p-rebuffering-ratios-cdf.svg">
+<img src="Verizon%20LTE%20short%201080p-rebuffering-ratios-cdf.svg">
+<img src="Verizon%20EVDO%20driving%20720p-rebuffering-ratios-cdf.svg">
+<img src="Verizon%20LTE%20short%20720p-rebuffering-ratios-cdf.svg">
 
 </ol>
 

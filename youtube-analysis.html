@@ -1,4 +1,17 @@
 <html>
+<style>
+.two_image_block {
+display: inline-block;
+float: left;
+width: 50%;
+}
+
+.two_image_block img {
+width: 100%;
+height: auto;
+        vertical-align: middle;
+}
+</style>
 
 <body>
 <h1>YouTube results (1080p LTE, 1080p EVDO, 720p LTE, 720p EVDO)</h1><p>
@@ -15,10 +28,21 @@
 <ol>
 
 <li> Among the "resumes," aggregate all the delays together and plot the CDF.<p>
+<div class="two_image_block">
 <img src="Verizon%20EVDO%20driving%201080p-resume-delays-cdf.svg">
+</div>
+
+<div class="two_image_block">
 <img src="Verizon%20LTE%20short%201080p-resume-delays-cdf.svg">
+</div>
+
+<div class="two_image_block">
 <img src="Verizon%20EVDO%20driving%20720p-resume-delays-cdf.svg">
+</div>
+
+<div class="two_image_block">
 <img src="Verizon%20LTE%20short%20720p-resume-delays-cdf.svg">
+</div>
 
 <li>Plot the CDF of all of the "inter-frame delays." It's okay if most of them are exactly 1/24 second -- hopefully that will be true. But the part of the graph that is &gt; 1/24 second will be the stally part.<p>
 <img src="Verizon%20EVDO%20driving%201080p-inter-frame-delays-ccdf.svg">
